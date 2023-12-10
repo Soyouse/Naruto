@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0cm;
+    padding: 0cm;
+    width: 100%;
+}
+
+.navbar {
+    position: relative;
+    background-color: #2c2c2c;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+    margin: 5px;
+    font-family: 'Inter', sans-serif;
+    padding: 30px 50px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+
+}
+.la_carte {
+    position: absolute;
+    left: 5.3%;
+}
+
+.nos_services {
+    position: absolute;
+    left: 3.5%;
+}
+
+.contact {
+    position: absolute;
+
+}
+.la_carte::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    bottom: 1%;  
+    width: 2px; 
+    height: 50%; 
+    background-color: white; 
+}
+
+.la_carte::before {
+    content: '';
+    position: absolute;
+    right: 200px;
+    bottom: 1%;  
+    width: 2px; 
+    height: 50%; 
+    background-color: white; 
+}
+
+.nos_services::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    bottom: 1%;  
+    width: 2px; 
+    height: 50%; 
+    background-color: white; 
+}
+
+.contact::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 1%;  
+    width: 2px; 
+    height: 50%; 
+    background-color: white;
+}
+.logo a img{
+    position: absolute;
+    padding: -100%;
+    height: 100%;
+    width: 12%;
+    margin-right: 500px;
+    left: 0%;
+    top: 0%;
+}
+
+.login {
+    position: absolute;
+    right: 0%;
+    top: -55%;
+    background-color: #3c3c3c;
+    height: 155%;
+    width: 4%;
+}
+
+.login img {
+    position: absolute;
+    left: 8.5%;
+    bottom: 6%;
+}
+
+.footer_bar {
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer_bar ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.footer_bar ul li {
+    margin: 5px 20px;
+    margin-bottom: 5%;
+}
+
+.footer_bar ul li img {
+    height: 50px;
+    width: 50px;
+}
+
+.cd a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter' Thin;
+    height: 5px;
+    font-size: 65%;
+}
+
+.cd {
+    position: relative;
+    margin-top: 50px;
+}
+
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background-image: url("images/OCHI-restaurant-ramen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.nom {
+    width: 35%;
+    height: 5%;
+    background-color: #9c9c9c;
+    position: absolute;
+    top: 15%;
+    left: 32.5%;
+    border-radius: 5px;
+    
+}
+
+.mail {
+    width: 35%;
+    height: 5%;
+    background-color: #9c9c9c;
+    position: absolute;
+    top: 25%;
+    left: 32.5%;
+    border-radius: 5px;
+    
+}
+
+.sujet {
+    width: 35%;
+    height: 5%;
+    background-color: #9c9c9c;
+    position: absolute;
+    top: 35%;
+    left: 32.5%;
+    border-radius: 5px;
+}
+
+.message {
+    width: 35%;
+    height: 30%;
+    background-color: #9c9c9c;
+    position: absolute;
+    top: 45%;
+    left: 32.5%;
+    border-radius: 5px;
+}
+
+#nom {
+    position: absolute;
+    top: 16.5%;
+    left: 38%;
+    width: 28.5%;
+}
+
+#labeln {
+    position: absolute;
+    top: 16.3%;
+    left: 33.75%;
+    width: 29.5%;
+    font-family: 'Inter', Black;
+}
+
+#email {
+    position: absolute;
+    top: 26.5%;
+    left: 38%;
+    width: 28.5%;
+}
+
+#labelm {
+    position: absolute;
+    top: 26.3%;
+    left: 33.75%;
+    margin-right: 0.1%;
+    width: 29.5%;
+    font-family: 'Inter', Black;
+}
+
+#sujet {
+    position: absolute;
+    top: 36.5%;
+    left: 38%;
+    width: 28.5%;
+}
+
+#labels {
+    position: absolute;
+    top: 36.3%;
+    left: 33.75%;
+    width: 29.5%;
+    font-family: 'Inter', Black;
+}
+
+#message {
+    position: absolute;
+    top: 48.5%;
+    left: 34%;
+    width: 32%;
+    height: 23.3%;
+}
+
+#label_m {
+    position: absolute;
+    top: 46.3%;
+    left: 33.75%;
+    width: 29.5%;
+    font-family: 'Inter', Black;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 2050px) and (max-width: 2600px) {
+    .login {
+        position: absolute;
+        right: 0%;
+        top: -55%;
+        background-color: #3c3c3c;
+        height: 155%;
+        width: 3.4%;
+    }
+    
+    .login img {
+        position: absolute;
+        left: 8.5%;
+        bottom: 6%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+    .login {
+        position: absolute;
+        right: 0%;
+        top: -55%;
+        background-color: #3c3c3c;
+        height: 155%;
+        width: 4.1%;
+    }
+    
+    .login img {
+        position: absolute;
+        left: 8.5%;
+        bottom: 6%;
+    }
+}
+
+@media (min-width: 2100px) and (max-width: 2100px) {
+    .login {
+        position: absolute;
+        right: 0%;
+        top: -55%;
+        background-color: #3c3c3c;
+        height: 155%;
+        width: 4.1%;
+    }
+    
+    .login img {
+        position: absolute;
+        left: 8.5%;
+        bottom: 6%;
+    }
+}
+
+@media (max-width: 1800px) {
+    .login {
+        position: absolute;
+        right: 0%;
+        top: -55%;
+        background-color: #3c3c3c;
+        height: 155%;
+        width: 4.6%;
+    }
+    
+    .login img {
+        position: absolute;
+        left: 8.5%;
+        bottom: 6%;
+    }
+}
+@media (max-width: 1500px) {
+    .login {
+        position: absolute;
+        right: 0%;
+        top: -55%;
+        background-color: #3c3c3c;
+        height: 155%;
+        width: 5.1%;
+    }
+    
+    .login img {
+        position: absolute;
+        left: 8.5%;
+        bottom: 6%;
+    }
+}
+@media (max-width: 1400px) {
+    .login {
+        position: absolute;
+        right: 0%;
+        top: -55%;
+        background-color: #3c3c3c;
+        height: 155%;
+        width: 6.1%;
+    }
+    
+    .login img {
+        position: absolute;
+        left: 8.5%;
+        bottom: 6%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    label {
+        position: absolute; 
+        top: -30px; 
+        transform: scale(0.8); 
+        transform-origin: center; 
+      }
+  
+    input {
+      transform: scale(0.8); 
+      transform-origin: center; 
+    }
+
+    .navbar {
+        display: none; 
+    }
+
+    .navbar-mobile {
+        position: relative;
+        display: flex; 
+        background-color: #2c2c2c;
+        height: 5em;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    
+    .logo-mobile {
+        position: absolute;
+        left: 40.5%;
+    }
+
+    .logo-mobile img {
+        max-width: 100%;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        z-index: 2; 
+        cursor: pointer;
+        opacity: 0;
+    }
+    
+
+    #menu li {
+        list-style-type: none;
+        margin: 5px 0;
+    }
+  
+    .menu li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Inter', sans-serif;
+        font-size: 150%;
+        display: inline-block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 2%;
+    }
+
+
+    .burger {
+        position: absolute;
+        top: 25%;
+        z-index: 1;
+    }
+    
+    
+    .menu {
+        display: none;
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        width: 100%; 
+        background-color: white; 
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+       
+    }
+    
+  
+    .menu-toggle:checked + .menu {
+        display: block;
+        background-color: #2c2c2c;
+
+    }
+    
+
+    .nom {
+        width: 50%;
+        height: 5%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        border-radius: 5px;
+        
+    }
+    
+    .mail {
+        width: 50%;
+        height: 5%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        border-radius: 5px;
+        
+    }
+    
+    .sujet {
+        width: 50%;
+        height: 5%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        border-radius: 5px;
+    }
+    
+    .message {
+        width: 50%;
+        height: 40%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 45%;
+        left: 25%; 
+        border-radius: 5px;
+    }
+    
+    #nom {
+        position: absolute;
+        top: 16.5%;
+        left: 42%;
+        width: 30%;
+    }
+    
+    #labeln {
+        position: absolute;
+        top: 16.3%;
+        left: 30%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+    
+    #email {
+        position: absolute;
+        top: 26.5%;
+        left: 42%;
+        width: 30%;
+    }
+    
+    #labelm {
+        position: absolute;
+        top: 26.3%;
+        left: 30%;
+        margin-right: 0.1%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+    
+    #sujet {
+        position: absolute;
+        top: 36.5%;
+        left: 42%;
+        width: 30%;
+    }
+    
+    #labels {
+        position: absolute;
+        top: 36.3%;
+        left: 30%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+    
+    #message {
+        position: absolute;
+        top: 43.5%;
+        left: 28%;
+        width: 45%;
+        height: 43.5%;
+    }
+    
+    #label_m {
+        position: absolute;
+        top: 45.3%;
+        left: 29.75%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+
+    /* footer bar */
+
+    .footer_bar {
+        background-color: #2c2c2c;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .footer_bar ul {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    
+    .footer_bar ul li {
+        margin: 5px 20px;
+        margin-bottom: 5%;
+    }
+    
+    .footer_bar ul li img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    
+  }
+
+@media (max-width: 850px) {
+    .logo-mobile {
+        position: absolute;
+        left: 38%;
+    }
+}
+
+@media (max-width: 726px) {
+    .logo-mobile {
+        position: absolute;
+        left: 35%;
+    }
+}
+
+@media (max-width: 580px) {
+    .logo-mobile {
+        position: absolute;
+        left: 32%;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-mobile {
+        position: absolute;
+        left: 28%;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo-mobile {
+        position: absolute;
+        left: 25%;
+    }
+}
+
+
+
+@media (max-height: 500px) {
+
+    .login {
+        position: absolute;
+        right: 0%;
+        top: -55%;
+        background-color: #3c3c3c;
+        height: 155%;
+        width: 10%;
+    }
+    
+    .login img {
+        position: absolute;
+        left: 8.5%;
+        bottom: 6%;
+    }
+
+    .logo a img{
+        position: absolute;
+        padding: -100%;
+        height: 100%;
+        width: 18%;
+        margin-right: 500px;
+        left: 0%;
+        top: 0%;
+    }
+
+    .nom {
+        width: 50%;
+        height: 7%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        border-radius: 5px;
+        
+    }
+    
+    .mail {
+        width: 50%;
+        height: 7%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        border-radius: 5px;
+        
+    }
+    
+    .sujet {
+        width: 50%;
+        height: 7%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        border-radius: 5px;
+    }
+    
+    .message {
+        width: 50%;
+        height: 50%;
+        background-color: #9c9c9c;
+        position: absolute;
+        top: 40%;
+        left: 25%; 
+        border-radius: 5px;
+    }
+    
+    #nom {
+        position: absolute;
+        top: 11.5%;
+        left: 42%;
+        width: 30%;
+    }
+    
+    #labeln {
+        position: absolute;
+        top: 11.3%;
+        left: 30%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+    
+    #email {
+        position: absolute;
+        top: 21.5%;
+        left: 42%;
+        width: 30%;
+    }
+    
+    #labelm {
+        position: absolute;
+        top: 21.3%;
+        left: 30%;
+        margin-right: 0.1%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+    
+    #sujet {
+        position: absolute;
+        top: 31.5%;
+        left: 42%;
+        width: 30%;
+    }
+    
+    #labels {
+        position: absolute;
+        top: 31.3%;
+        left: 30%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+    
+    #message {
+        position: absolute;
+        top: 47.5%;
+        left: 27.5%;
+        width: 45%;
+        height: 35%;
+    }
+    
+    #label_m {
+        position: absolute;
+        top: 41.3%;
+        left: 28%;
+        width: 29.5%;
+        font-family: 'Inter', Black;
+    }
+
+}
+
